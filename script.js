@@ -12,7 +12,7 @@ function compute()
     rate = document.getElementById("rate").value;
     years = document.getElementById("years").value;
 
-    interest = principle * years * rate / 100;
+    interest = principal * years * rate / 100;
 
     targetDate = date.addDays(years*365);
     targetYear = targetDate.getFullYear();
