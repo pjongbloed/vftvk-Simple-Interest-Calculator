@@ -21,6 +21,7 @@ function compute()
 function getRangeValue()
 {
     rateValue = document.getElementById("rate").value;
-    document.getElementById("displayRate").innerHTML = rateValue;
+    formattedValue = (toString(rateValue) + "%")
+    document.getElementById("displayRate").innerText = formattedValue;
 }
         
