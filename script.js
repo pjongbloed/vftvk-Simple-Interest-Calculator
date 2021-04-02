@@ -17,9 +17,9 @@ function compute()
     targetDate = date.addDays(years*365);
     targetYear = targetDate.getFullYear();
 
-    result = ("If you deposit " + principal + "," +
-              "at an interest rate of " + rate + "." +
-              "You will receive an amount of " + interest + "," +
+    result = ("If you deposit " + principal + ", " +
+              "at an interest rate of " + rate + ". " +
+              "You will receive an amount of " + interest + ", " +
               "in the year " + targetYear);
     document.getElementById("result").innerHTML = result;
 }
