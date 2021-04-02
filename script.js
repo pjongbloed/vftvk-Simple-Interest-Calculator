@@ -17,11 +17,11 @@ function compute()
     targetDate = date.addDays(years*365);
     targetYear = targetDate.getFullYear();
 
-    result = ("If you deposit " + principal + ", " <br>
-              "at an interest rate of " + rate + "%. " <br>
-              "You will receive an amount of " + interest + ", " <br>
+    result = ("If you deposit " + principal + ", " + "\n" +
+              "at an interest rate of " + rate + "%. " + "\n" +
+              "You will receive an amount of " + interest + ", " + "\n" +
               "in the year " + targetYear);
-    document.getElementById("result").innerHTML = string.format(result);
+    document.getElementById("result").innerHTML = result;
 }
 
 function getRangeValue()
