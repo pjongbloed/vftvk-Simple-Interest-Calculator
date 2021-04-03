@@ -17,20 +17,27 @@ function compute()
     targetDate = date.addDays(years*365);
     targetYear = targetDate.getFullYear();
 
-    principal = principal.classList.add('numbers');
-    rate = rate.classList.add('numbers');
-    interest = interest.classList.add('numbers');
-    targetYear = targetYear.classList.add('numbers');
+    result1a = ("If you deposit ");
+    result1b = (",");
+    result2a = ("at an interest rate of ");
+    result2b = ("%.");
+    result3a = ("You will receive an amount of ");
+    result3b = (",");
+    result4a = ("in the year ");
 
-    result1 = ("If you deposit " + principal + ",");
-    result2 = ("at an interest rate of " + rate + "%.");
-    result3 = ("You will receive an amount of " + interest + ",");
-    result4 = ("in the year " + targetYear);
+    document.getElementById("result1a").innerHTML = result1a;
+    document.getElementById("result2a").innerHTML = result2a;
+    document.getElementById("result3a").innerHTML = result3a;
+    document.getElementById("result4a").innerHTML = result4a;
 
-    document.getElementById("result1").innerHTML = result1;
-    document.getElementById("result2").innerHTML = result2;
-    document.getElementById("result3").innerHTML = result3;
-    document.getElementById("result4").innerHTML = result4;
+    document.getElementById("number1").innerHTML = principal;
+    document.getElementById("number2").innerHTML = rate;
+    document.getElementById("number3").innerHTML = interest;
+    document.getElementById("number4").innerHTML = targetYear;
+
+    document.getElementById("result1b").innerHTML = result1b;
+    document.getElementById("result2b").innerHTML = result2b;
+    document.getElementById("result3b").innerHTML = result3b;
 }
 
 function getRangeValue()
