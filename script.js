@@ -17,10 +17,12 @@ function compute()
     targetDate = date.addDays(years*365);
     targetYear = targetDate.getFullYear();
 
+    formattedRate = (rate + "%");
+
     result1a = ("If you deposit ");
     result1b = (",");
     result2a = ("at an interest rate of ");
-    result2b = ("%.");
+    result2b = (".");
     result3a = ("You will receive an amount of ");
     result3b = (",");
     result4a = ("in the year ");
@@ -31,7 +33,7 @@ function compute()
     document.getElementById("result4a").innerHTML = result4a;
 
     document.getElementById("number1").innerHTML = principal;
-    document.getElementById("number2").innerHTML = rate;
+    document.getElementById("number2").innerHTML = formattedRate;
     document.getElementById("number3").innerHTML = interest;
     document.getElementById("number4").innerHTML = targetYear;
 
