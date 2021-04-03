@@ -23,6 +23,10 @@ h1{
 .numbers {
     background-color: #FFFF00;
 }
-.p {
-    margin-bottom: 5px;
+p {
+    margin-bottom: 1px;
+    margin-top: 1px;
+}
+.results {
+    margin-top: 5px;
 }
