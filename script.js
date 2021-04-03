@@ -1,3 +1,5 @@
+
+//adding functionality to get future date based on days
 Date.prototype.addDays = function(days) {
     var date = new Date(this.valueOf());
     date.setDate(date.getDate() + days);
@@ -6,6 +8,10 @@ Date.prototype.addDays = function(days) {
 
 var date = new Date();
 
+//main function
+//gets all the values from the input elements
+//then calculates the interest
+//then formats the result & updates it dynamically on the calculator
 function compute()
 {
     principal = document.getElementById("principal").value;
@@ -42,13 +48,15 @@ function compute()
     document.getElementById("result3b").innerHTML = result3b;
 }
 
+//gets & formats the interest rate % to show next to the slider
 function getRangeValue()
 {
     rateValue = document.getElementById("rate").value;
     formattedValue = (rateValue + "%")
     document.getElementById("displayRate").innerText = formattedValue;
 }
-        
+
+//validates the principal value is greater than 0 & positive
 function validatePrincipal() {
   var x = document.getElementById("principal").value;
   if (x <= 0) {
