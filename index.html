@@ -11,18 +11,18 @@
             <div class="input">
             Amount <input type="number" min="0" id="principal" onchange="validatePrincipal()">  <br/>
             Rate <input type="range" min="1" max="20" step="0.25" defaultValue="10.25" id="rate" onchange="getRangeValue()"><span id="displayRate">10.25%</span>  <br/>
-            No. of Years <input type="select" 
-                option="1"
-                option="2"
-                option="3"
-                option="4"
-                option="5"
-                option="6"
-                option="7"
-                option="8"
-                option="9"
-                option="10"                
-                id="years">  <br/>
+            No. of Years <select name="years" id="years">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>                
+                 </select>  <br/>
             <br>
             <button onclick="compute()">Compute Interest</button><br>
             <br>
